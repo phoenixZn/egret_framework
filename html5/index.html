@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Egret</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #888888;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+
+    <!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件。删除 modules_files 标签后，库文件加载列表将不会变化，请谨慎操作！-->
+    <!--modules_files_start-->
+	<script egret="lib" src="libs/modules/egret/egret.js"></script>
+	<script egret="lib" src="libs/modules/egret/egret.web.js"></script>
+	<script egret="lib" src="libs/modules/game/game.js"></script>
+	<script egret="lib" src="libs/modules/tween/tween.js"></script>
+	<script egret="lib" src="resourcemanager/resourcemanager.js"></script>
+	<script egret="lib" src="libs/modules/eui/eui.js"></script>
+	<script egret="lib" src="libs/modules/socket/socket.js"></script>
+	<script egret="lib" src="libs/modules/egret3d/egret3d.js"></script>
+	<script egret="lib" src="promise/promise.js"></script>
+	<!--modules_files_end-->
+
+    <!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+    
+
+    <!--这个标签会被替换为项目中所有的 javascript 文件。删除 game_files 标签后，项目文件加载列表将不会变化，请谨慎操作！-->
+    <!--game_files_start-->
+	<script egret="lib" src="bin-debug/logic/EventCenter.js"></script>
+	<script egret="lib" src="bin-debug/logic/ModuleFactory.js"></script>
+	<script egret="lib" src="bin-debug/network/NetInterface.js"></script>
+	<script egret="lib" src="bin-debug/coregame/shared/object/Component.js"></script>
+	<script egret="lib" src="bin-debug/coregame/shared/object/Object.js"></script>
+	<script egret="lib" src="bin-debug/framework/UIFactory.js"></script>
+	<script egret="lib" src="bin-debug/logic/CallCenter.js"></script>
+	<script egret="lib" src="bin-debug/logic/GameModule.js"></script>
+	<script egret="lib" src="bin-debug/coregame/util/multChangeValue/MultChangeValue.js"></script>
+	<script egret="lib" src="bin-debug/coregame/shared/object/ObjectManager.js"></script>
+	<script egret="lib" src="bin-debug/coregame/sync/GameSync.js"></script>
+	<script egret="lib" src="bin-debug/coregame/logic/command/Command.js"></script>
+	<script egret="lib" src="bin-debug/framework/AudioManager.js"></script>
+	<script egret="lib" src="bin-debug/framework/StateManager.js"></script>
+	<script egret="lib" src="bin-debug/coregame/logic/LogicWorld.js"></script>
+	<script egret="lib" src="bin-debug/framework/UIManager.js"></script>
+	<script egret="lib" src="bin-debug/coregame/render/renderEntity/RenderEntityComponent.js"></script>
+	<script egret="lib" src="bin-debug/coregame/render/RenderWorld.js"></script>
+	<script egret="lib" src="bin-debug/logic/GameLogic.js"></script>
+	<script egret="lib" src="bin-debug/network/NetMessage.js"></script>
+	<script egret="lib" src="bin-debug/coregame/logic/entity/EntityComponent.js"></script>
+	<script egret="lib" src="bin-debug/coregame/shared/object/ObjectCreationContext.js"></script>
+	<script egret="lib" src="bin-debug/coregame/render/test/Camera.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/renderWorld/entityCmpts/actor/ActorRenderCmpt.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/renderWorld/entityCmpts/bomb/BombRenderCmpt.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/renderWorld/entityCmpts/operateCenter/BubbleOperateCenter.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/renderWorld/entityCmpts/operateCenter/BubbleOperationType.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/renderWorld/entityCmpts/operateCenter/FixedDirConverter.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/renderWorld/entityCmpts/operateCenter/IOperateable.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/renderWorld/entityCmpts/operateCenter/OperateCenter.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/renderWorld/entityCmpts/UILocalCtrlCmpt.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/util/BubbleMultChangeSettingEx.js"></script>
+	<script egret="lib" src="bin-debug/coregame/CoreGame.js"></script>
+	<script egret="lib" src="bin-debug/coregame/ICoreGameFactory.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/BubbleCoreGameFactory.js"></script>
+	<script egret="lib" src="bin-debug/coregame/logic/entity/Entity.js"></script>
+	<script egret="lib" src="bin-debug/coregame/logic/entity/entityCmpts/BlackboardComponent.js"></script>
+	<script egret="lib" src="bin-debug/coregame/logic/entity/entityCmpts/PlayerComponent.js"></script>
+	<script egret="lib" src="bin-debug/coregame/logic/entity/entityCmpts/PositionComponent.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/BubbleHelper.js"></script>
+	<script egret="lib" src="bin-debug/coregame/logic/entity/EntityManager.js"></script>
+	<script egret="lib" src="bin-debug/coregame/logic/entity/EntityUtil.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/BubbleSetting.js"></script>
+	<script egret="lib" src="bin-debug/coregame/logic/renderMessage/IRenderMessageGenerator.js"></script>
+	<script egret="lib" src="bin-debug/coregame/logic/renderMessage/IRenderMessageProcessor.js"></script>
+	<script egret="lib" src="bin-debug/coregame/logic/renderMessage/RenderMessage.js"></script>
+	<script egret="lib" src="bin-debug/coregame/logic/worldCmpts/GameModeComponent.js"></script>
+	<script egret="lib" src="bin-debug/coregame/logic/WorldCreationContext.js"></script>
+	<script egret="lib" src="bin-debug/coregame/render/2d/AnimationMovieClip.js"></script>
+	<script egret="lib" src="bin-debug/coregame/render/2d/Joystick.js"></script>
+	<script egret="lib" src="bin-debug/coregame/render/renderEntity/entityCmpts/AnimationComponent.js"></script>
+	<script egret="lib" src="bin-debug/coregame/render/renderEntity/entityCmpts/ModelComponent.js"></script>
+	<script egret="lib" src="bin-debug/coregame/render/renderEntity/RenderEntity.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/logicWorld/BubbleLogicWorld.js"></script>
+	<script egret="lib" src="bin-debug/coregame/render/renderEntity/RenderEntityManager.js"></script>
+	<script egret="lib" src="bin-debug/coregame/render/renderEntity/RenderEntityUtil.js"></script>
+	<script egret="lib" src="bin-debug/network/Protobuf.js"></script>
+	<script egret="lib" src="bin-debug/coregame/render/ResourceLoader.js"></script>
+	<script egret="lib" src="bin-debug/coregame/render/test/Actor.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/BubbleEntityConfig.js"></script>
+	<script egret="lib" src="bin-debug/coregame/render/test/Scene.js"></script>
+	<script egret="lib" src="bin-debug/coregame/render/worldCmpts/CameraComponent.js"></script>
+	<script egret="lib" src="bin-debug/coregame/render/worldCmpts/ViewComponent.js"></script>
+	<script egret="lib" src="bin-debug/coregame/shared/misc/CRC.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/logicWorld/command/BubbleCommand.js"></script>
+	<script egret="lib" src="bin-debug/coregame/shared/object/ComponentTypeRegistry.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/logicWorld/command/BubbleCommandHandler.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/logicWorld/entityCmpts/actor/ActorCmpt.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/logicWorld/entityCmpts/actor/ActorMoveCtrlCmpt.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/logicWorld/entityCmpts/block/BlockCmpt.js"></script>
+	<script egret="lib" src="bin-debug/coregame/sync/GameSyncLocal.js"></script>
+	<script egret="lib" src="bin-debug/coregame/sync/GameSyncLockFrame.js"></script>
+	<script egret="lib" src="bin-debug/coregame/util/GameTimer.js"></script>
+	<script egret="lib" src="bin-debug/coregame/util/multChangeValue/MultChangeBool_AND.js"></script>
+	<script egret="lib" src="bin-debug/coregame/util/multChangeValue/MultChangeBool_OR.js"></script>
+	<script egret="lib" src="bin-debug/coregame/util/multChangeValue/MultChangeSettingEx.js"></script>
+	<script egret="lib" src="bin-debug/coregame/util/multChangeValue/MultChangeValue_Last.js"></script>
+	<script egret="lib" src="bin-debug/coregame/util/multChangeValue/MultChangeValue_Priority.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/logicWorld/entityCmpts/bomb/BombCmpt.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/logicWorld/entityCmpts/collide/Box2D.js"></script>
+	<script egret="lib" src="bin-debug/framework/GameGlobal.js"></script>
+	<script egret="lib" src="bin-debug/framework/SceneManager.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/logicWorld/entityCmpts/collide/CollideBox2DCmpt.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/logicWorld/entityCmpts/collide/CollideTag.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/logicWorld/worldCmpts/BubbleSceneCmpt.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/logicWorld/worldCmpts/collideManager/CollideManagerCmpt.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/logicWorld/worldCmpts/collideManager/spaceSubdivision/GridBoundSubdivision.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/logicWorld/worldCmpts/collideManager/spaceSubdivision/NoneSubdivision.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/renderWorld/BubbleConstant.js"></script>
+	<script egret="lib" src="bin-debug/logic/message/MessageDef.js"></script>
+	<script egret="lib" src="bin-debug/logic/message/BasicMessages.js"></script>
+	<script egret="lib" src="bin-debug/logic/message/MessageFactory.js"></script>
+	<script egret="lib" src="bin-debug/logic/message/ProbutTestMessage.js"></script>
+	<script egret="lib" src="bin-debug/logic/module/bulletin/BulletinMessage.js"></script>
+	<script egret="lib" src="bin-debug/logic/module/bulletin/BulletinModule.js"></script>
+	<script egret="lib" src="bin-debug/logic/module/login/LoginMessage.js"></script>
+	<script egret="lib" src="bin-debug/logic/module/login/LoginModule.js"></script>
+	<script egret="lib" src="bin-debug/logic/module/match/MatchMessage.js"></script>
+	<script egret="lib" src="bin-debug/logic/module/match/MatchModule.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/renderWorld/BubbleRenderMessageProcessor.js"></script>
+	<script egret="lib" src="bin-debug/Main.js"></script>
+	<script egret="lib" src="bin-debug/network/Buffer.js"></script>
+	<script egret="lib" src="bin-debug/network/CRC32.js"></script>
+	<script egret="lib" src="bin-debug/network/NetConnection.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/renderWorld/BubbleRenderWorld.js"></script>
+	<script egret="lib" src="bin-debug/bubbleBattle/renderWorld/entityCmpts/actor/ActionComponent.js"></script>
+	<script egret="lib" src="bin-debug/network/NetPacket.js"></script>
+	<script egret="lib" src="bin-debug/shared/GameConst.js"></script>
+	<script egret="lib" src="bin-debug/shared/Int64.js"></script>
+	<script egret="lib" src="bin-debug/shared/Msdk.js"></script>
+	<script egret="lib" src="bin-debug/ui/eui/AssetAdapter.js"></script>
+	<script egret="lib" src="bin-debug/ui/eui/ThemeAdapter.js"></script>
+	<script egret="lib" src="bin-debug/ui/LoadingUI.js"></script>
+	<script egret="lib" src="bin-debug/ui/LoginPage.js"></script>
+	<script egret="lib" src="bin-debug/ui/MatchPage.js"></script>
+	<script egret="lib" src="bin-debug/util/ClassPool.js"></script>
+	<script egret="lib" src="bin-debug/util/FixPoint.js"></script>
+	<script egret="lib" src="bin-debug/util/GameHelper.js"></script>
+	<script egret="lib" src="bin-debug/util/Sleep.js"></script>
+	<!--game_files_end-->
+</head>
+<body>
+
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+         data-entry-class="Main"
+         data-orientation="landscape"
+         data-scale-mode="showAll"
+         data-frame-rate="30"
+         data-content-width="1136"
+         data-content-height="640"
+         data-show-paint-rect="false"
+         data-multi-fingered="2"
+         data-show-fps="false" data-show-log="false"
+         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    </div>
+    <script>
+        /**
+         * {
+         * "renderMode":, //引擎渲染模式，"canvas" 或者 "webgl"
+         * "audioType": 0 //使用的音频类型，0:默认，1:qq audio，2:web audio，3:audio
+         * "antialias": //WebGL模式下是否开启抗锯齿，true:开启，false:关闭，默认为false
+         * "retina": //是否基于devicePixelRatio缩放画布
+         * }
+         **/
+        egret.runEgret({renderMode:"webgl", audioType:0});
+    </script>
+</body>
+</html>

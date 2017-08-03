@@ -1,0 +1,288 @@
+{
+	"groups": [
+		{
+			"keys": "button_down_png,button_up_png,checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,thumb_pb_png,track_pb_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,track_sb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png",
+			"name": "eui"
+		},
+		{
+			"keys": "420_json,420_png,flower_png,grass_png",
+			"name": "420"
+		},
+		{
+			"name": "preload",
+			"keys": "Alphamap_22_png,Detailmap_0_jpg,Detailmap_1_jpg,Detailmap_2_jpg,Detailmap_3_jpg,Detailmap_4_jpg,Detail_texture_0_png,Detail_texture_1_png,Detail_texture_2_png,Detail_texture_3_png,Detail_texture_4_png,Heightmap_22_jpg,SplatPrototype_texture_0_jpg,SplatPrototype_texture_1_jpg,SplatPrototype_texture_2_jpg,SplatPrototype_texture_3_jpg,Atlas_png,cars_png,LightmapFar-0_png,LightmapFar-1_png,LightmapFar-2_png,Roads_png"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/420/420.json",
+			"type": "json",
+			"name": "420_json"
+		},
+		{
+			"url": "assets/420/420.png",
+			"type": "image",
+			"name": "420_png"
+		},
+		{
+			"url": "assets/420/flower.png",
+			"type": "image",
+			"name": "flower_png"
+		},
+		{
+			"url": "assets/420/grass.png",
+			"type": "image",
+			"name": "grass_png"
+		},
+		{
+			"url": "sound/music_01.mp3",
+			"type": "sound",
+			"name": "music_01_mp3"
+		},
+		{
+			"url": "config.json",
+			"type": "json",
+			"name": "config_json"
+		},
+		{
+			"url": "ui/eui/assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "ui/eui/assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "ui/eui/assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "ui/eui/assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "ui/eui/assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "ui/eui/assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "ui/eui/assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "ui/eui/assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "ui/eui/assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "ui/eui/assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "ui/eui/assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "ui/eui/assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "ui/eui/assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "ui/eui/assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "ui/eui/assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "ui/eui/assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "ui/eui/assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "ui/eui/assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "ui/eui/assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "ui/eui/assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "ui/eui/assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "ui/eui/assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "ui/eui/assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"name": "Alphamap_22_png",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/Alphamap_22.png"
+		},
+		{
+			"name": "Detailmap_0_jpg",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/Detailmap_0.jpg"
+		},
+		{
+			"name": "Detailmap_1_jpg",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/Detailmap_1.jpg"
+		},
+		{
+			"name": "Detailmap_2_jpg",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/Detailmap_2.jpg"
+		},
+		{
+			"name": "Detailmap_3_jpg",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/Detailmap_3.jpg"
+		},
+		{
+			"name": "Detailmap_4_jpg",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/Detailmap_4.jpg"
+		},
+		{
+			"name": "Detail_texture_0_png",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/Detail_texture_0.png"
+		},
+		{
+			"name": "Detail_texture_1_png",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/Detail_texture_1.png"
+		},
+		{
+			"name": "Detail_texture_2_png",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/Detail_texture_2.png"
+		},
+		{
+			"name": "Detail_texture_3_png",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/Detail_texture_3.png"
+		},
+		{
+			"name": "Detail_texture_4_png",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/Detail_texture_4.png"
+		},
+		{
+			"name": "Heightmap_22_jpg",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/Heightmap_22.jpg"
+		},
+		{
+			"name": "SplatPrototype_texture_0_jpg",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/SplatPrototype_texture_0.jpg"
+		},
+		{
+			"name": "SplatPrototype_texture_1_jpg",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/SplatPrototype_texture_1.jpg"
+		},
+		{
+			"name": "SplatPrototype_texture_2_jpg",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/SplatPrototype_texture_2.jpg"
+		},
+		{
+			"name": "SplatPrototype_texture_3_jpg",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Terrain/SplatPrototype_texture_3.jpg"
+		},
+		{
+			"name": "Atlas_png",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Texture/Atlas.png"
+		},
+		{
+			"name": "cars_png",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Texture/cars.png"
+		},
+		{
+			"name": "LightmapFar-0_png",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Texture/LightmapFar-0.png"
+		},
+		{
+			"name": "LightmapFar-1_png",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Texture/LightmapFar-1.png"
+		},
+		{
+			"name": "LightmapFar-2_png",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Texture/LightmapFar-2.png"
+		},
+		{
+			"name": "Roads_png",
+			"type": "image",
+			"url": "scene/zhadanren/scene/Texture/Roads.png"
+		}
+	]
+}

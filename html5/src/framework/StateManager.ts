@@ -1,0 +1,6 @@
+class StateManager
+{
+	public Init()
+	{
+	}
+}

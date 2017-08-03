@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MatchPageSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="15d16ef6ae1" ></w:Config>
+	<e:Button id="apply" label="匹配" x="308" y="249"/>
+	<e:Button id="start" label="开始" x="493" y="251"/>
+	<e:Button label="单机" x="405.5" y="69"/>
+	<e:Label text="当前匹配人数:" x="322" y="161" anchorOffsetX="0" width="271" anchorOffsetY="0" height="33"/>
+	<e:Label id="count" text="-" x="520" y="161" width="271" height="33"/>
+</e:Skin>

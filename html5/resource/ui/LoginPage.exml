@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoginPageSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="15cf79c34e5" ></w:Config>
+	<e:Label text="账号:" x="133.12" y="134.97"/>
+	<e:EditableText id="username" width="250" height="33.33" text="Label" x="224.67" y="134.67" anchorOffsetY="0" anchorOffsetX="0"/>
+	<e:Label text="密码:" x="133.12" y="202.54"/>
+	<e:EditableText id="password" width="250" height="33.33" text="Label" x="224.67" y="202.24" anchorOffsetY="0" anchorOffsetX="0"/>
+	<e:Label text="服务器:" x="133.12" y="270.54"/>
+	<e:EditableText id="ip" width="250" height="33.33" text="192.168.2.228" x="254.67" y="270.24" anchorOffsetY="0" anchorOffsetX="0"/>
+	<e:Button id="login_btn" label="登陆" x="133.12" y="350" anchorOffsetX="0" width="156.05" anchorOffsetY="0" height="54.54" enabled="true"/>	
+</e:Skin>

@@ -1,0 +1,37 @@
+{
+  "skins": {
+    "eui.Button": "resource/ui/eui/eui_skins/ButtonSkin.exml",
+    "eui.CheckBox": "resource/ui/eui/eui_skins/CheckBoxSkin.exml",
+    "eui.HScrollBar": "resource/ui/eui/eui_skins/HScrollBarSkin.exml",
+    "eui.HSlider": "resource/ui/eui/eui_skins/HSliderSkin.exml",
+    "eui.Panel": "resource/ui/eui/eui_skins/PanelSkin.exml",
+    "eui.TextInput": "resource/ui/eui/eui_skins/TextInputSkin.exml",
+    "eui.ProgressBar": "resource/ui/eui/eui_skins/ProgressBarSkin.exml",
+    "eui.RadioButton": "resource/ui/eui/eui_skins/RadioButtonSkin.exml",
+    "eui.Scroller": "resource/ui/eui/eui_skins/ScrollerSkin.exml",
+    "eui.ToggleSwitch": "resource/ui/eui/eui_skins/ToggleSwitchSkin.exml",
+    "eui.VScrollBar": "resource/ui/eui/eui_skins/VScrollBarSkin.exml",
+    "eui.VSlider": "resource/ui/eui/eui_skins/VSliderSkin.exml",
+    "eui.ItemRenderer": "resource/ui/eui/eui_skins/ItemRendererSkin.exml",
+    "LoginPage": "resource/ui/LoginPage.exml",
+    "MatchPage": "resource/ui/MatchPage.exml"
+  },
+  "autoGenerateExmlsList": true,
+  "exmls": [
+    "resource/ui/LoginPage.exml",
+    "resource/ui/MatchPage.exml",
+    "resource/ui/eui/eui_skins/ButtonSkin.exml",
+    "resource/ui/eui/eui_skins/CheckBoxSkin.exml",
+    "resource/ui/eui/eui_skins/HScrollBarSkin.exml",
+    "resource/ui/eui/eui_skins/HSliderSkin.exml",
+    "resource/ui/eui/eui_skins/ItemRendererSkin.exml",
+    "resource/ui/eui/eui_skins/PanelSkin.exml",
+    "resource/ui/eui/eui_skins/ProgressBarSkin.exml",
+    "resource/ui/eui/eui_skins/RadioButtonSkin.exml",
+    "resource/ui/eui/eui_skins/ScrollerSkin.exml",
+    "resource/ui/eui/eui_skins/TextInputSkin.exml",
+    "resource/ui/eui/eui_skins/ToggleSwitchSkin.exml",
+    "resource/ui/eui/eui_skins/VScrollBarSkin.exml",
+    "resource/ui/eui/eui_skins/VSliderSkin.exml"
+  ]
+}
